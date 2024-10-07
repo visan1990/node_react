@@ -15,8 +15,11 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-
+--
+/*BASE DE DATOS A UTILIZAR*/
 CREATE SCHEMA `tareas` ;
+USE `tareas`;
+--
 
 --
 -- Table structure for table `tarea_estatus`
@@ -31,6 +34,13 @@ CREATE TABLE `tarea_estatus` (
   PRIMARY KEY (`idestatus`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+LOCK TABLES `tarea_estatus` WRITE;
+/*!40000 ALTER TABLE `tarea_estatus` DISABLE KEYS */;
+INSERT INTO `tarea_estatus` VALUES (0,'NO FINALIZADA'),(1,'FINALIZADA');
+/*!40000 ALTER TABLE `tarea_estatus` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 --
 -- Table structure for table `tarea_usuario`
