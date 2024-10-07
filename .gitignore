@@ -1,0 +1,5 @@
+crud_react/node_modules/*
+node_express/node_modules/*
+
+crud_react/package-lock.json
+node_express/package-lock.json
