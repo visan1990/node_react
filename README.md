@@ -28,7 +28,7 @@ Abriremos una nueva terminal y ejecutamos el siguiente codigo.
   npm install --legacy-peer-deps
 ```
 
-Configurar conexion de la BD modificaremos la informacion del documento **"nodemon.json"** ubicado en el siguiente directorio **<directorio_del_proyecto>/node_express** donde debemos definir lo siguiente:  
+Para configurar la conexion con nuestra BD modificaremos la informacion del documento **"nodemon.json"** ubicado en el siguiente directorio **<directorio_del_proyecto>/node_express** donde debemos definir lo siguiente:  
 
         "MYSQL_SERVER"      : "<IP de nuestro servidor Mysql>",
         "MYSQL_PORT"        : "<Puerto de nuestro servidor Mysql>",
